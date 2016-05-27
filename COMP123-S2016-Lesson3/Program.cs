@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace COMP123_S2016_Lesson3
+namespace COMP123_Lab2_Dilakshan_Packiyanathan
 {
     /**
      * This class is the "driver" class for our Program
@@ -22,15 +22,49 @@ namespace COMP123_S2016_Lesson3
         public static void Main(string[] args)
         {
             // create a new instance of the Person class
-            Person person = new Person("Tom");
+            Person Dilakshan = new Person();
+            Dilakshan.Name = "Dilakshan";
+            Dilakshan.Age = 18;
+            Dilakshan.SaysHello();
+            Dilakshan.ShowAge();
 
-            Console.WriteLine(person.Name);
+            Console.WriteLine();
+            Console.Write("Press 'Enter' for new Person");
+            Console.ReadLine();
+            Console.WriteLine();
 
-            // set a value in the Name property of the Person class
-            //person.Name = "Tom";
 
-            // get the Name value and print to console
-            Console.WriteLine(person.Name);
+
+            Person person = new Person("Buklau");
+            person.Age = 34;
+            person.SaysHello();
+            person.ShowAge();
+
+            Console.WriteLine();
+            Console.Write("Press 'Enter' for new Person");
+            Console.ReadLine();
+            Console.WriteLine();
+
+            Person Donavich = new Person(46);
+            Donavich.Name = "Donavich";
+            Donavich.SaysHello();
+            Donavich.ShowAge();
+
+            Console.WriteLine();
+            Console.Write("Press 'Enter' for new Person");
+            Console.ReadLine();
+            Console.WriteLine();
+
+            Person Tyrone = new Person("Tyrone", 23);
+            Tyrone.Name = "Tyrone";
+            Tyrone.SaysHello();
+            Tyrone.ShowAge();
+
+            Console.WriteLine();
+            Console.Write("Thats all, Peace out:)");
+            Console.ReadLine();
+            Console.WriteLine();
+
         }
     }
 
